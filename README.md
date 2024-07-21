@@ -32,90 +32,26 @@ Este repositório contém exemplos de código para a primeira unidade do curso d
                     
 ### Executar o produtor:
     java cp target/classes br.com.alura.ecommerce.NewOrderProducer
-                    
-                
-        
-Executar o consumidor:
-                 
-                    
-                        bash
                         
-                            Copiar código
-                        
-                    
-                    
-                        bin/kafkaconsoleconsumer.sh bootstrapserver localhost:9092 topic ECOMMERCE_NEW_ORDER frombeginning
-                    
+### Executar o consumidor:
+    bin/kafkaconsoleconsumer.sh bootstrapserver localhost:9092 topic ECOMMERCE_NEW_ORDER frombeginning
                 
-        
+## Minhas Anotações
 
-Anotações
+### Executar Zookeeper antes do Kafka:
+    bin/zookeeperserverstart.sh config/zookeeper.properties
+                         
+### Executar Kafka:
+    bin/kafkaserverstart.sh config/server.properties
+                                
+### Listar tópicos:
+    bin/kafkatopics.sh list bootstrapserver localhost:9092
 
-Executar Zookeeper antes do Kafka:
-                 
+### Descrever os tópicos:
+    bin/kafkatopics.sh describe bootstrapserver localhost:9092
                     
-                        bash
-                        
-                            Copiar código
-                        
-                    
-                    
-                        bin/zookeeperserverstart.sh config/zookeeper.properties
-                    
-                
-        
-Executar Kafka:
-                 
-                    
-                        bash
-                        
-                            Copiar código
-                        
-                    
-                    
-                        bin/kafkaserverstart.sh config/server.properties
-                    
-                
-        
-Listar tópicos:
-                 
-                    
-                        bash
-                        
-                            Copiar código
-                        
-                    
-                    
-                        bin/kafkatopics.sh list bootstrapserver localhost:9092
-                    
-                
-        
-Descrever os tópicos:
-                 
-                    
-                        bash
-                        
-                            Copiar código
-                        
-                    
-                    
-                        bin/kafkatopics.sh describe bootstrapserver localhost:9092
-                    
-                
-        
-Criando consumer para ficar escutando os tópicos:
-                 
-                    
-                        bash
-                        
-                            Copiar código
-                        
-                    
-                    
-                        bin/kafkaconsoleconsumer.sh bootstrapserver localhost:9092 topic ECOMMERCE_NEW_ORDER frombeginning
-                    
-                
-        
+### Criando consumer para ficar escutando os tópicos:
+    bin/kafkaconsoleconsumer.sh bootstrapserver localhost:9092 topic ECOMMERCE_NEW_ORDER frombeginning
 
 Observações
 
