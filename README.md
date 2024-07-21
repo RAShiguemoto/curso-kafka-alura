@@ -25,34 +25,13 @@ Este repositório contém exemplos de código para a primeira unidade do curso d
 ## Iniciar o Kafka:
     bin/kafkaserverstart.sh config/server.properties
                     
-                
-        
+## Executando os exemplos
 
-Executando os exemplos
-
-Criar um tópico:
-                 
+### Criar um tópico:
+    bin/kafkatopics.sh create bootstrapserver localhost:9092 replicationfactor 1 partitions 1 topic ECOMMERCE_NEW_ORDER
                     
-                        bash
-                        
-                            Copiar código
-                        
-                    
-                    
-                        bin/kafkatopics.sh create bootstrapserver localhost:9092 replicationfactor 1 partitions 1 topic ECOMMERCE_NEW_ORDER
-                    
-                
-        
-Executar o produtor:
-                 
-                    
-                        bash
-                        
-                            Copiar código
-                        
-                    
-                    
-                        java cp target/classes br.com.alura.ecommerce.NewOrderProducer
+### Executar o produtor:
+    java cp target/classes br.com.alura.ecommerce.NewOrderProducer
                     
                 
         
