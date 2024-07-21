@@ -11,16 +11,13 @@ Este repositório contém exemplos de código para a primeira unidade do curso d
     - https://kafka.apache.org/downloads
     - https://zookeeper.apache.org/
 
+  - Configurar o Zookeeper:  
+    - Criar um arquivo zookeeper.properties na pasta config do Kafka.  
+    - Definir as propriedades do Zookeeper no arquivo zookeeper.properties.  
 
-Configurar o Zookeeper:
-Criar um arquivo zookeeper.properties na pasta config do Kafka.
-Definir as propriedades do Zookeeper no arquivo zookeeper.properties.
-
-
-Configurar o Kafka:
-Criar um arquivo server.properties na pasta config do Kafka.
-Definir as propriedades do Kafka no arquivo server.properties.
-
+## Configurar o Kafka:  
+  - Criar um arquivo server.properties na pasta config do Kafka.  
+  - Definir as propriedades do Kafka no arquivo server.properties.  
 
 Iniciar o Zookeeper:
                  
