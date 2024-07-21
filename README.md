@@ -2,9 +2,9 @@
 Este repositório contém exemplos de código para a primeira unidade do curso de Kafka da Alura, focando em produtores e consumidores.
 
 ## Prérequisitos
-  -Java 11+  
-  -Apache Kafka (instalação e configuração)  
-  -Apache Zookeeper (instalação e configuração)  
+  - Java 11+  
+  - Apache Kafka (instalação e configuração)  
+  - Apache Zookeeper (instalação e configuração)  
 
 Instalação e Configuração
 
