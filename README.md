@@ -27,43 +27,37 @@ Este repositório contém exemplos de código para a primeira unidade do curso d
                     
 ## Executando os exemplos
 
-  - Criar um tópico:
+### Criar um tópico:
     bin/kafkatopics.sh create bootstrapserver localhost:9092 replicationfactor 1 partitions 1 topic ECOMMERCE_NEW_ORDER
                     
-  ### Executar o produtor:
+### Executar o produtor:
     java cp target/classes br.com.alura.ecommerce.NewOrderProducer
                         
-  ### Executar o consumidor:
+### Executar o consumidor:
     bin/kafkaconsoleconsumer.sh bootstrapserver localhost:9092 topic ECOMMERCE_NEW_ORDER frombeginning
                 
 ## Minhas Anotações
 
-  ### Executar Zookeeper antes do Kafka:
+### Executar Zookeeper antes do Kafka:
     bin/zookeeperserverstart.sh config/zookeeper.properties
                          
-  ### Executar Kafka:
+### Executar Kafka:
     bin/kafkaserverstart.sh config/server.properties
                                 
-  ### Listar tópicos:
+### Listar tópicos:
     bin/kafkatopics.sh list bootstrapserver localhost:9092
 
-  ### Descrever os tópicos:
+### Descrever os tópicos:
     bin/kafkatopics.sh describe bootstrapserver localhost:9092
                     
-  ### Criando consumer para ficar escutando os tópicos:
+### Criando consumer para ficar escutando os tópicos:
     bin/kafkaconsoleconsumer.sh bootstrapserver localhost:9092 topic ECOMMERCE_NEW_ORDER frombeginning
 
-Observações
+## Observações
 
-Os exemplos de código neste repositório são apenas para fins de demonstração.
-Para uma implementação mais robusta, é recomendável utilizar bibliotecas como o Apache Kafka Client para Java.
-Este repositório é apenas um ponto de partida para o aprendizado de Kafka. 
-Para mais informações sobre Kafka, consulte a documentação oficial: https://kafka.apache.org/
-
-Próximos passos
-
-Implementar um consumidor em Java para o tópico ECOMMERCE_NEW_ORDER.
-Criar um novo tópico para armazenar informações de pedidos processados.
-Implementar um produtor para enviar mensagens para o novo tópico.
+Os exemplos de código neste repositório são apenas para fins de demonstração.  
+Para uma implementação mais robusta, é recomendável utilizar bibliotecas como o Apache Kafka Client para Java.  
+Este repositório é apenas um ponto de partida para o aprendizado de Kafka.   
+Para mais informações sobre Kafka, consulte a documentação oficial: https://kafka.apache.org/  
 
 Espero que este README seja útil para você! 
