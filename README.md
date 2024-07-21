@@ -31,7 +31,7 @@ Este repositório contém exemplos de código para a primeira unidade do curso d
     bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 
 ### Descrever os tópicos:
-    bin/kafka-topics.sh ---describe --bootstrap-server localhost:9092
+    bin/kafka-topics.sh --describe --bootstrap-server localhost:9092
                     
 ### Criando consumer para ficar escutando os tópicos:
     bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ECOMMERCE_NEW_ORDER --from-beginning
