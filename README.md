@@ -19,29 +19,11 @@ Este repositório contém exemplos de código para a primeira unidade do curso d
   - Criar um arquivo server.properties na pasta config do Kafka.  
   - Definir as propriedades do Kafka no arquivo server.properties.  
 
-Iniciar o Zookeeper:
-                 
-                    
-                        bash
-                        
-                            Copiar código
-                        
-                    
-                    
-                        bin/zookeeperserverstart.sh config/zookeeper.properties
-                    
-                
-        
-Iniciar o Kafka:
-                 
-                    
-                        bash
-                        
-                            Copiar código
-                        
-                    
-                    
-                        bin/kafkaserverstart.sh config/server.properties
+## Iniciar o Zookeeper:
+    bin/zookeeperserverstart.sh config/zookeeper.properties
+                           
+## Iniciar o Kafka:
+    bin/kafkaserverstart.sh config/server.properties
                     
                 
         
