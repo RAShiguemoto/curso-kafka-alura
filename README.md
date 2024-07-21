@@ -27,7 +27,7 @@ Este repositório contém exemplos de código para a primeira unidade do curso d
                     
 ## Executando os exemplos
 
-  ### - Criar um tópico:
+  - Criar um tópico:
     bin/kafkatopics.sh create bootstrapserver localhost:9092 replicationfactor 1 partitions 1 topic ECOMMERCE_NEW_ORDER
                     
   ### Executar o produtor:
