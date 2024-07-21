@@ -55,8 +55,7 @@ Este repositório contém exemplos de código para a primeira unidade do curso d
 
 ## Observações
 
-Os exemplos de código neste repositório são apenas para fins de demonstração.  
-Para uma implementação mais robusta, é recomendável utilizar bibliotecas como o Apache Kafka Client para Java.  
+Os exemplos de código neste repositório são apenas para fins de demonstração.
 Este repositório é apenas um ponto de partida para o aprendizado de Kafka.   
 Para mais informações sobre Kafka, consulte a documentação oficial: https://kafka.apache.org/  
 
