@@ -19,39 +19,22 @@ Este repositório contém exemplos de código para a primeira unidade do curso d
   - Criar um arquivo server.properties na pasta config do Kafka.  
   - Definir as propriedades do Kafka no arquivo server.properties.  
 
-## Iniciar o Zookeeper:
-    bin/zookeeperserverstart.sh config/zookeeper.properties
-                           
-## Iniciar o Kafka:
-    bin/kafkaserverstart.sh config/server.properties
-                    
-## Executando os exemplos
-
-### Criar um tópico:
-    bin/kafkatopics.sh create bootstrapserver localhost:9092 replicationfactor 1 partitions 1 topic ECOMMERCE_NEW_ORDER
-                    
-### Executar o produtor:
-    java cp target/classes br.com.alura.ecommerce.NewOrderProducer
-                        
-### Executar o consumidor:
-    bin/kafkaconsoleconsumer.sh bootstrapserver localhost:9092 topic ECOMMERCE_NEW_ORDER frombeginning
-                
 ## Minhas Anotações
 
 ### Executar Zookeeper antes do Kafka:
-    bin/zookeeperserverstart.sh config/zookeeper.properties
+    bin/zookeeper-server-start.sh config/zookeeper.properties
                          
 ### Executar Kafka:
-    bin/kafkaserverstart.sh config/server.properties
+    bin/kafka-server-start.sh config/server.properties
                                 
 ### Listar tópicos:
-    bin/kafkatopics.sh list bootstrapserver localhost:9092
+    bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 
 ### Descrever os tópicos:
-    bin/kafkatopics.sh describe bootstrapserver localhost:9092
+    bin/kafka-topics.sh ---describe --bootstrap-server localhost:9092
                     
 ### Criando consumer para ficar escutando os tópicos:
-    bin/kafkaconsoleconsumer.sh bootstrapserver localhost:9092 topic ECOMMERCE_NEW_ORDER frombeginning
+    bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ECOMMERCE_NEW_ORDER --from-beginning
 
 ## Observações
 
