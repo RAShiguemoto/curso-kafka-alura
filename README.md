@@ -6,11 +6,10 @@ Este repositório contém exemplos de código para a primeira unidade do curso d
   - Apache Kafka (instalação e configuração)  
   - Apache Zookeeper (instalação e configuração)  
 
-Instalação e Configuração
-
-Baixar e instalar o Apache Kafka e o Apache Zookeeper:
-https://kafka.apache.org/downloads
-https://zookeeper.apache.org/
+## Instalação e Configuração  
+  - Baixar e instalar o Apache Kafka e o Apache Zookeeper:  
+    - https://kafka.apache.org/downloads
+    - https://zookeeper.apache.org/
 
 
 Configurar o Zookeeper:
