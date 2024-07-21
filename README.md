@@ -36,6 +36,9 @@ Este repositório contém exemplos de código para a primeira unidade do curso d
 ### Criando consumer para ficar escutando os tópicos:
     bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic ECOMMERCE_NEW_ORDER --from-beginning
 
+### Alterando tópico: criando mais partições
+    bin/kafka-topics.sh --alter --bootstrap-server localhost:9092 --topic ECOMMERCE_NEW_ORDER --partitions 3
+
 ## Observações
 
 Os exemplos de código neste repositório são apenas para fins de demonstração.
